@@ -6,7 +6,7 @@ public class Main {
 
         int n = 365;
         int e = 10;
-        int sum = 365 % 10;
+        int sum = n % e;
         System.out.println(sum);
 
         System.out.println(n / 10 % 10);
