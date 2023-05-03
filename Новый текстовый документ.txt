@@ -1,0 +1,71 @@
+ Loading...
+ 
+Welcome to JS/Linux (i586)
+ 
+Use 'vflogin username' to connect to your account.
+You can create a new account at https://vfsync.org/signup .
+Use 'export_file filename' to export a file to your computer.
+Imported files are written to the home directory.
+ 
+localhost:~# mkdir /home/animals
+localhost:~# cd /home/animals
+localhost:/home/animals# mkdir /dogs/cats/fish
+mkdir: can't create directory '/dogs/cats/fish': No such file or directory
+localhost:/home/animals# touch /dogs/pluto/cats/pluto goes to dogs/garfield goes
+ to cats
+touch: /dogs/pluto/cats/pluto: No such file or directory
+touch: dogs/garfield: No such file or directory
+localhost:/home/animals# mkdir /home/planets
+localhost:/home/animals# touch /opt/Mercury/Venus/Mars/Jupiter
+touch: /opt/Mercury/Venus/Mars/Jupiter: No such file or directory
+localhost:/home/animals# mv /Mercury/Venus/Mars/Jupiter/home/planets
+BusyBox v1.31.1 () multi-call binary.
+ 
+Usage: mv [-fin] SOURCE DEST
+or: mv [-fin] SOURCE... DIRECTORY
+ 
+Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY
+
+       -f      Don't prompt before overwriting
+        -i      Interactive, prompt before overwrite
+        -n      Don't overwrite an existing file
+localhost:/home/animals# touch /tmp/adam
+localhost:/home/animals# mkdir /home/humans
+localhost:/home/animals# cd /adam/home/humans
+sh: cd: can't cd to /adam/home/humans: No such file or directory
+localhost:/home/animals# touch /tmp/eva
+localhost:/home/animals# mv /eva/opt/eve
+BusyBox v1.31.1 () multi-call binary.
+ 
+Usage: mv [-fin] SOURCE DEST
+or: mv [-fin] SOURCE... DIRECTORY
+ 
+Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY
+ 
+        -f      Don't prompt before overwriting
+        -i      Interactive, prompt before overwrite
+        -n      Don't overwrite an existing file
+localhost:/home/animals# mv /eve/humans/home/humans
+BusyBox v1.31.1 () multi-call binary.
+ 
+Usage: mv [-fin] SOURCE DEST
+or: mv [-fin] SOURCE... DIRECTORY
+ 
+Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY
+
+
+        -f      Don't prompt before overwriting
+        -i      Interactive, prompt before overwrite
+        -n      Don't overwrite an existing file
+localhost:/home/animals# ls /home/humans
+localhost:/home/animals# ls -1
+cats
+goes
+to
+localhost:/home/animals# ls /adam/eve/home/humans
+ls: /adam/eve/home/humans: No such file or directory
+localhost:/home/animals# export_file history_txt
+history_txt: No such file or directory
+
+
+
