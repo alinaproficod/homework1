@@ -1,0 +1,52 @@
+Use 'vflogin username' to connect to your account.
+You can create a new account at https://vfsync.org/signup .
+Use 'export_file filename' to export a file to your computer.
+Imported files are written to the home directory.
+ 
+localhost:~# mkdir /home /animals
+mkdir: can't create directory '/home': File exists
+localhost:~# mkdir /home /animals /dogs
+mkdir: can't create directory '/home': File exists
+mkdir: can't create directory '/animals': File exists
+localhost:~# mkdir /home /animals /cats
+mkdir: can't create directory '/home': File exists
+mkdir: can't create directory '/animals': File exists
+localhost:~# mkdir /home /animals /fish
+mkdir: can't create directory '/home': File exists
+mkdir: can't create directory '/animals': File exists
+localhost:~# touch /home /animals /dogs /pluto
+localhost:~# touch /home /animals /fish /nemo
+localhost:~#  /home /animals /cats /garfield
+sh: /home: Permission denied
+localhost:~# mkdir /home /planets
+mkdir: can't create directory '/home': File exists
+localhost:~# touch /opt /Mercury
+localhost:~# touch /opt /Venus
+localhost:~# touch /opt /Mars
+localhost:~# mv /opt /Mercury /home /planets
+localhost:~# mv /opt /Venus /home /planets
+mv: can't rename '/opt': No such file or directory
+mv: can't rename '/home': No such file or directory
+localhost:~# mv /opt /Mars /home /planets
+mv: can't rename '/opt': No such file or directory
+mv: can't rename '/home': No such file or directory
+localhost:~# mv /opt /Jupiter /home /planets
+mv: can't rename '/opt': No such file or directory
+mv: can't rename '/home': No such file or directory
+localhost:~# touch /tmp /adam
+localhost:~# mkdir /home /humans
+localhost:~# cp /tmp /adam /home /humans
+cp: omitting directory '/tmp'
+cp: omitting directory '/home'
+localhost:~# touch /tmp /eva
+localhost:~# mv /tmp /eva opt /eve
+mv: can't rename '/tmp': No such file or directory
+mv: can't rename '/eva': No such file or directory
+mv: can't rename 'opt': No such file or directory
+localhost:~# mv /opt /eve /home /humans
+mv: can't rename '/opt': No such file or directory
+mv: can't rename '/eve': No such file or directory
+localhost:~# ls /home /humans
+ls: /home: No such file or directory
+/humans:
+adam home
