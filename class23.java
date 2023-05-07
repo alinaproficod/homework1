@@ -5,7 +5,7 @@ public class class23 {
 
         String str = new String("I study Basic Java!");
         System.out.println(str.length());
-        System.out.println(str.charAt(14));
+        System.out.println(str.charAt(18));
         System.out.println(str.contains("Java"));
         System.out.println(str.substring(14 , 18));
         System.out.println(str.toUpperCase());
