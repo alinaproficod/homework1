@@ -1,29 +1,31 @@
-localhost:~# mkdir -p /home /user /start
-localhost:~# touch /home /user /start /1.txt
-localhost:~# echo "Start" >> /home /user /start /1.txt
-sh: can't create /home: Is a directory
-localhost:~# date >> /home /user /start /1.txt
-sh: can't create /home: Is a directory
-localhost:~# mkdir -p /opt /task
-localhost:~# cp /home /user /start /1.txt /opt /task /start.txt
-cp: omitting directory '/home'
-cp: omitting directory '/user'
-cp: omitting directory '/start'
-cp: can't create '/start.txt/1.txt': No such file or directory
-cp: omitting directory '/opt'
-cp: omitting directory '/task'
-localhost:~# tail -n 4 /* >> /opt /task /start.txt
-sh: can't create /opt: Is a directory
-localhost:~# cp -r task /tmp /testnew
-cp: can't stat 'task': No such file or directory
-cp: can't create directory '/testnew/tmp': No such file or directory
-localhost:~# cat /readme.txt >> /tmp /testnew /start/txt
-sh: can't create /tmp: Is a directory
-localhost:~# rm -r /opt /task
-localhost:~# ls
-bench.py    hello.c     hello.js    readme.txt
-localhost:~# ls -1
-bench.py
-hello.c
-hello.js
-readme.txt
+Alina@DESKTOP-J6FR0D8 MINGW64 ~
+$ cd/opt/180423_evening/Alina@DESKTOP-J6FR0D8
+bash: cd/opt/180423_evening/Alina@DESKTOP-J6FR0D8: No such file or directory
+
+Alina@DESKTOP-J6FR0D8 MINGW64 ~
+$ nano testscript.sh
+
+Alina@DESKTOP-J6FR0D8 MINGW64 ~
+$ chmod +x testscript.sh
+
+Alina@DESKTOP-J6FR0D8 MINGW64 ~
+$ chmod g-r testscript.sh
+
+Alina@DESKTOP-J6FR0D8 MINGW64 ~
+$ chmod a-x testscript.sh
+
+Alina@DESKTOP-J6FR0D8 MINGW64 ~
+$ mv testscript.sh .testscript.sh
+
+Alina@DESKTOP-J6FR0D8 MINGW64 ~
+$ nano testscript.sh
+
+Alina@DESKTOP-J6FR0D8 MINGW64 ~
+$ ./.testscript.sh
+your name is: Alina
+your working directory is: /c/Users/Alina
+Number of users: 0
+done
+
+Alina@DESKTOP-J6FR0D8 MINGW64 ~
+$
